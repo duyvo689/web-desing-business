@@ -26,6 +26,26 @@ html {
     overflow-x: hidden;
 }
 
+section {
+    min-height : 100vh;
+    padding    : 0 9%;
+    padding-top: 7.5rem;
+}
+
+.btn {
+    padding   : 0.7rem 4rem;
+    display   : inline-block;
+    margin-top: 1.5rem;
+    font-size : 1.7rem;
+    color     : #999;
+    border    : 0.1rem solid#DEE4EE
+}
+
+.btn:hover {
+    background: #f0f0f0;
+    color     : var(--blue);
+}
+
 header {
     position       : fixed;
     top            : 0;
@@ -75,17 +95,84 @@ header .navbar ul li a:hover {
     display  : none;
 }
 
+.home {
+    padding-bottom     : 3rem;
+    display            : flex;
+    align-items        : center;
+    justify-content    : space-between;
+    min-height         : 75vh;
+    overflow           : hidden;
+    background         : linear-gradient(rgba(0, 0, 255, .7), rgba(0, 0, 255.7)), url(../images/home-img.png) no-repeat;
+    background-size    : cover;
+    background-position: bottom;
+}
 
+.home .image {
+    position: relative;
+    top     : 7.5rem;
+}
 
+.home .image img {
+    width: 40rem;
+}
 
+.home .content span {
+    font-size: 2.5rem;
+    color    : #ff0;
+}
 
+.home .content h3 {
+    font-size: 5rem;
+    color    : #fff;
+}
 
+.home .content p {
+    font-size: 1.5rem;
+    color    : #eee;
+}
 
+.home .btn {
+    color: #eee;
+}
 
+.home .btn:hover {
+    color: var(--blue);
+}
 
+.icons-container {
+    min-height     : auto;
+    padding-top    : 1rem;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+}
 
+.icons-container .icons {
+    display    : flex;
+    align-items: center;
+    margin     : 2rem;
+    width      : 23rem;
+}
 
+.icons-container .icons img {
+    width  : 15rem;
+    padding: 0 1rem;
+}
 
+.icons-container .icons .info {
+    padding-left: 1rem;
+}
+
+.icons-container .icons .info h3 {
+    font-size: 2rem;
+    color    : var(--blue);
+}
+
+.icons-container .icons .info p {
+    font-size: 1.2rem;
+    color    : #666;
+}
 
 
 
@@ -151,5 +238,32 @@ header .navbar ul li a:hover {
     header .navbar.nav-toggle {
         transform: scaleY(1);
         opacity  : 1;
+    }
+
+    .home .image {
+        display: none;
+    }
+
+    .home .content {
+        text-align: center;
+    }
+}
+
+@media (max-width:550px) {
+    section {
+        padding    : 0 3%;
+        padding-top: 7.5rem;
+    }
+
+    .home .content h3 {
+        font-size: 3.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.3rem;
+    }
+
+    .icons-container .icons {
+        width: 100%;
     }
 }
