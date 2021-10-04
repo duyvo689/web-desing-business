@@ -46,6 +46,21 @@ section {
     color     : var(--blue);
 }
 
+.heading {
+    text-align : center;
+    color      : var(--blue);
+    font-size  : 3rem;
+    font-weight: normal;
+}
+
+.description {
+    font-size : 1.7rem;
+    text-align: center;
+    color     : #999;
+    width     : 80rem;
+    margin    : 0 auto;
+}
+
 header {
     position       : fixed;
     top            : 0;
@@ -174,10 +189,45 @@ header .navbar ul li a:hover {
     color    : #666;
 }
 
+.service {
+    background: #f0f0f0;
+}
 
+.service .box-container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    padding        : 2rem 0;
+}
 
+.service .box-container .box {
+    background: #fff;
+    border    : 0.1rem solid rgba(0, 0, 0, .1);
+    width     : 28rem;
+    padding   : 3rem;
+    margin    : 1.5rem;
+}
 
+.service .box-container .box:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
 
+.service .box-container .box img {
+    width : 7rem;
+    margin: 2rem 0;
+}
+
+.service .box-container .box h3 {
+    font-size: 2rem;
+    color    : var(--blue);
+}
+
+.service .box-container .box p {
+    font-size: 1.4rem;
+    color    : #999;
+    padding  : 1rem 0;
+}
 
 
 
@@ -195,6 +245,12 @@ header .navbar ul li a:hover {
 @media (max-width:990px) {
     html {
         font-size: 55%;
+    }
+
+    .description {
+        padding  : 1rem;
+        width    : auto;
+        font-size: 1.5rem;
     }
 }
 
