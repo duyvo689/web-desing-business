@@ -430,15 +430,57 @@ header .navbar ul li a:hover {
     background: #ddd;
 }
 
-.footer {}
+.footer {
+    background: #130f40;
+}
 
-.footer .box-container {}
+.footer .box-container {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+}
 
-.footer .box-container .box {}
+.footer .box-container .box {
+    margin: 2rem;
+    flex  : 1 1 25rem;
+}
 
-.footer .box-container .box h3 {}
+.footer .box-container .box h3 {
+    padding-bottom: 1rem;
+    font-size     : 2.5rem;
+    color         : #eee;
+}
 
-.footer .box-container .box a {}
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color    : #fff;
+}
+
+.footer .box-container .box a {
+    font-size: 1.5rem;
+    color    : #eee;
+    display  : block;
+    padding  : 1rem 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .credit {
+    font-size  : 2rem;
+    color      : #333;
+    background : #f0f0f0;
+    text-align : center;
+    padding    : 2rem 1rem;
+    font-weight: normal;
+}
+
+.scroll-top {
+    position: fixed;
+    right   : 2rem;
+    bottom  : 7.5rem;
+}
 
 
 
