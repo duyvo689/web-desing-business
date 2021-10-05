@@ -229,15 +229,216 @@ header .navbar ul li a:hover {
     padding  : 1rem 0;
 }
 
+.process {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.process .box-container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    padding        : 2rem 0;
+}
+
+.process .box-container .box {
+    border    : .1rem solid rgba(0, 0, 0, .1);
+    margin    : 1.5rem;
+    padding   : 3rem;
+    background: #fff;
+    margin-top: 5rem;
+    width     : 28rem;
+}
+
+.process .box-container .box span {
+    color        : var(--blue);
+    border       : 0.2rem solid var(--blue);
+    display      : block;
+    height       : 5rem;
+    width        : 5rem;
+    line-height  : 5rem;
+    text-align   : center;
+    border-radius: 50%;
+    font-size    : 2.4rem;
+    background   : #DEE4EE;
+    margin       : 0 auto;
+    margin-top   : -5rem;
+}
+
+.process .box-container .box h3 {
+    color     : var(--blue);
+    font-size : 2rem;
+    margin-top: 1rem;
+}
+
+.process .box-container .box p {
+    color    : #999;
+    font-size: 1.2rem;
+    padding  : 1rem;
+}
+
+.process .btn {
+    background: var(--blue);
+    color     : #fff;
+}
+
+.process .btn:hover {
+    opacity: 0.8;
+}
+
+.review {
+    background           : linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/home-img.png) no-repeat;
+    background-size      : cover;
+    background-position  : center;
+    background-attachment: fixed;
+}
+
+.review .heading {
+    color: #fff;
+}
+
+.review .description {
+    color    : #eee;
+    padding  : 1rem;
+    font-size: 1.5rem;
+}
+
+.review .box-container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    padding        : 2rem;
+}
+
+.review .box-container .box {
+    width        : 35rem;
+    background   : #fff;
+    padding      : 2rem;
+    margin       : 2rem;
+    margin-bottom: 10rem;
+    position     : relative;
+}
+
+.review .box-container .box img {
+    position     : absolute;
+    bottom       : -8.5rem;
+    left         : -1.5rem;
+    height       : 6rem;
+    width        : 6rem;
+    border-radius: 50%;
+    border       : 0.3rem solid #fff;
+    object-fit   : cover;
+}
+
+.review .box-container .box p {
+    color    : #999;
+    font-size: 1.3rem;
+}
+
+.review .box-container .box h3 {
+    color     : var(--blue);
+    font-size : 1.6rem;
+    text-align: end;
+}
 
 
+.review .box-container .box::before {
+    content   : '';
+    position  : absolute;
+    bottom    : -1rem;
+    left      : 0.4rem;
+    background: #fff;
+    height    : 2rem;
+    width     : 2rem;
+    transform : rotate(45deg);
+}
 
+.contact {
+    background    : #f0f0f0;
+    padding-bottom: 2rem;
+}
 
+.contact .box-container {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+}
 
+.contact .box-container .box {
+    width     : 30rem;
+    background: #fff;
+    padding   : 2rem;
+    margin    : 2rem;
+    text-align: center;
+    border    : 0.1rem solid rgba(0, 0, 0, .1);
+}
 
+.contact .box-container .box i {
+    color    : var(--blue);
+    font-size: 4rem;
+}
 
+.contact .box-container .box h3 {
+    padding  : 1rem 0;
+    font-size: 2rem;
+    color    : #666;
+}
 
+.contact .box-container .box p {
+    font-size: 1.5rem;
+    color    : #999;
+}
 
+.contact form {
+    background     : #fff;
+    border         : 0.1rem solid rgba(0, 0, 0, .1);
+    padding        : 2rem;
+    margin-top     : 1rem;
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+}
+
+.contact form .box {
+    width         : 48%;
+    padding       : 1rem 0;
+    margin        : 1rem 0;
+    font-size     : 1.5rem;
+    color         : var(--blue);
+    text-transform: none;
+    border-bottom : 0.2rem solid rgba(0, 0, 0, .1);
+}
+
+.contact form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.contact form .message {
+    height: 15rem;
+    resize: none;
+    width : 100%;
+}
+
+.contact form .box:focus {
+    border-color: var(--blue);
+}
+
+.contact form .btn:hover {
+    cursor    : pointer;
+    background: #ddd;
+}
+
+.footer {}
+
+.footer .box-container {}
+
+.footer .box-container .box {}
+
+.footer .box-container .box h3 {}
+
+.footer .box-container .box a {}
 
 
 
@@ -320,6 +521,15 @@ header .navbar ul li a:hover {
     }
 
     .icons-container .icons {
+        width: 100%;
+    }
+
+    .contact .box-container .box {
+        width : 100%;
+        margin: 1rem 0;
+    }
+
+    .contact form .box {
         width: 100%;
     }
 }
