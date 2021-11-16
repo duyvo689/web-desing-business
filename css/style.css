@@ -118,7 +118,7 @@ header .navbar ul li a:hover {
     justify-content    : space-between;
     min-height         : 75vh;
     overflow           : hidden;
-    background         : linear-gradient(rgba(0, 0, 255, .7), rgba(0, 0, 255.7)), url(../images/home-img.png) no-repeat;
+    background         : linear-gradient(rgba(21, 255, 0, 0.7), rgba(0, 0, 255.7)), url(../images/home-img.png) no-repeat;
     background-size    : cover;
     background-position: bottom;
 }
@@ -432,7 +432,7 @@ header .navbar ul li a:hover {
 }
 
 .footer {
-    background: #130f40;
+    background: rgba(21, 255, 0, 0.7);
 }
 
 .footer .box-container {
